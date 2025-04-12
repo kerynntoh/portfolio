@@ -25,6 +25,12 @@ a,
 }
 
 /* DESKTOP NAV */
+
+#desktop-nav {
+    position: relative;
+    z-index: 100;
+}
+
 nav, 
 .nav-links {
     display: flex;
@@ -47,7 +53,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.nav-links a:hover {
     color: rgb(100, 100, 100); 
     text-decoration: underline;
     text-underline-offset: 0.5rem;
@@ -146,5 +152,122 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex; 
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+    height: auto;
+    margin-top: -7rem;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 600px;
+    width: 600px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p1 {
+   font-size: 1.5rem;
+}
+
+.section_text_h1 {
+   font-size: 2.5rem;
+}
+
+.section_text_p2 {
+   font-size: 1.6rem;
+}
+
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: color 300ms ease, background 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: none;          
+    background: none;      
+  }
+  
+  /* Button 1 (Contact Info) */
+  .btn-color-1 {
+    background: #2d3547;
+    color: #FDFDFD;
+  }
+  
+  /* Button 2 (Download CV) */
+  .btn-color-2 {
+    background: #6C8B93; 
+    color: #FDFDFD;
+  }
+  
+  .btn-color-1:hover {
+    color: #2d3547;
+    background: #FDFDFD;
+    border: 2px solid #2d3547;
+  }
+
+  .btn-color-2:hover {
+    background: #FDFDFD;
+    color: #6C8B93;
+    border: 2px solid #6C8B93;
+  }
+  
+
+.btn-container {
+    gap: 1rem;
 }
